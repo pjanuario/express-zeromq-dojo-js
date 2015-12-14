@@ -3,7 +3,7 @@ var Logger = require('logger-facade-nodejs'),
 
 // this is the default config for logger
 var config = {
-  level: 'trace',
+  level: 'debug',
   timeFormat: 'YYYY-MM-DD HH:mm:ss',
   messageFormat: '%time | %logger::%level - %msg'
 };
