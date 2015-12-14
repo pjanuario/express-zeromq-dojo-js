@@ -10,6 +10,7 @@
   "author": "Pedro Januário <prnjanuario@gmail.com> (http://shared-mind.tumblr.com/)",
   "license": "ISC",
   "dependencies": {
+    "convict": "^1.0.2",
     "logger-facade-console-plugin-nodejs": "0.0.3",
     "logger-facade-nodejs": "0.0.3",
     "zmq-service-suite-service": "^0.1.1"

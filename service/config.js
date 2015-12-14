@@ -1,12 +1,14 @@
-var config = {
-  service: {
-    // service name
-    sid: 'TASKS',
-    // broker backend address
-    broker: "tcp://127.0.0.1:7776",
-    // service heartbeat interval in ms (optional), defaults to 1s
-    heartbeat: 1000
-  }
-};
+var convict = require('convict');
+var schema = require('./configs/schema');
 
-module.exports = config;
+// Define a schema
+var conf = convict(schema);
+
+// Load environment dependent configuration
+var env = conf.get('env');
+conf.loadFile('./configs/' + env + '.json');
+
+// Perform validation
+conf.validate({strict: true});
+
+module.exports = conf;
