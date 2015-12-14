@@ -5,8 +5,16 @@ var Task = function(attrs){
     'id', 'createdAt', 'updatedAt',
     'title', 'completed', 'userId'];
 
+  var defaults = {
+    id: null, createdAt: null, updatedAt: null,
+    title: null, completed: false, userId: null
+  };
+
   // filter whitelisted properties
-  _.merge(this, _.pick(attrs, whitelist));
+  var props = _.pick(attrs, whitelist);
+
+  // set defaults on this
+  _.defaults(this, props, defaults);
 };
 
 module.exports = Task;
