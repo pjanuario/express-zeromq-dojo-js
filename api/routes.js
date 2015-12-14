@@ -1,8 +1,7 @@
 var express = require('express'),
-    router = express.Router();
+    router = express.Router(),
+    tasksController = require('./controllers/task');
 
-router.get('/', function(req, res) {
-  res.json({ ok: true })
-});
+router.get('/tasks/:id', tasksController.get);
 
 module.exports = router;
