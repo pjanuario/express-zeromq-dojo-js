@@ -2,6 +2,8 @@ var express = require('express'),
     morgan = require('morgan'),
     config = require('./config'),
     router = require('./routes'),
+    logger = require('./logger'),
+    log = Logger.getLogger("API");
     app = express();
 
 // configure logging middleware
@@ -21,6 +23,6 @@ app.use(router);
 // hook application into the specified port
 app.listen(config.port);
 
-console.log('Server running on port %d', config.port);
+log.info('Server running on port %d', config.port);
 
 module.exports = app;
