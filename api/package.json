@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node_modules/mocha/bin/mocha ./tests"
   },
   "author": "Pedro Januário <prnjanuario@gmail.com> (http://shared-mind.tumblr.com/)",
   "license": "ISC",
@@ -19,5 +16,8 @@
     "logger-facade-nodejs": "0.0.3",
     "morgan": "^1.6.1",
     "zmq-service-suite-client": "0.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
   }
 }
