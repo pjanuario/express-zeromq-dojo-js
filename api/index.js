@@ -3,7 +3,7 @@ var express = require('express'),
     config = require('./config'),
     router = require('./routes'),
     Logger = require('./logger'),
-    log = Logger.getLogger("API");
+    log = Logger.getLogger("API"),
     app = express();
 
 // configure logging middleware
