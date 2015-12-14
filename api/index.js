@@ -2,7 +2,7 @@ var express = require('express'),
     morgan = require('morgan'),
     config = require('./config'),
     router = require('./routes'),
-    logger = require('./logger'),
+    Logger = require('./logger'),
     log = Logger.getLogger("API");
     app = express();
 
