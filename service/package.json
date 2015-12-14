@@ -14,6 +14,8 @@
     "lodash": "^3.10.1",
     "logger-facade-console-plugin-nodejs": "0.0.3",
     "logger-facade-nodejs": "0.0.3",
+    "mongoose": "^4.3.1",
+    "mongoose-timestamp": "^0.4.0",
     "zmq-service-suite-service": "^0.1.1"
   },
   "devDependencies": {

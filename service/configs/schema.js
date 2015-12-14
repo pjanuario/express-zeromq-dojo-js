@@ -22,5 +22,12 @@ module.exports = {
       format: "int",
       default: 1000
     }
+  },
+  database: {
+    uri: {
+      doc: "Mongoose Database URI",
+      format: String,
+      default: "mongodb://localhost/todo-dojo"
+    }
   }
 };
