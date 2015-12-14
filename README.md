@@ -24,12 +24,34 @@ https://github.com/pjanuario/zmq-service-suite-broker-js
 
 ## Project Structure
 
-The some project will contain the API and service modules on it.
+The project is a simple todo list where tasks can be assigned to github users.
+
+A task contains the following properties:
+* id: unique identifier
+* createdAt: timestamp from creation date;
+* updatedAt: timestamp from last update;
+* title: a title associated to the task;
+* completed: identifies if the task is completed;
+* userId: github unique identifier;
+
+A task contains the following a user subresource with the following properties:
+* id: github unique identifier;
+* name: user name;
+* email: user email address;
+
+Available resources on the API:
+* GET /tasks -> retrieve the list of tasks available
+* GET /tasks/:id -> retrieve a specific task
+* GET /tasks/:id/user -> retrieve the user associated with the task
+* POST /tasks -> create a new task
+* DELETE /tasks/:id -> delete the specified task
+* PUT /tasks/:id -> save specified task
+
+The some project will contain the API and service modules, the service will contain all business logic.
 
 ### API
 
 The API is built using express.
-
 
 ### Service
 
