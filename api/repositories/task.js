@@ -10,8 +10,8 @@ var repository = {
   get: function(id, callback) {
     var payload = { id: id };
     client.call("get", payload)
-      .then(function(payload){
-        var data = new Task(payload);
+      .then(function(data){
+        var data = new Task(data.payload);
         callback(null, data);
       })
       .fail(function(error){
