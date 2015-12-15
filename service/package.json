@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node_modules/mocha/bin/mocha ./tests"
+    "test": "NODE_ENV=test node_modules/mocha/bin/mocha ./tests/integration"
   },
   "author": "Pedro Januário <prnjanuario@gmail.com> (http://shared-mind.tumblr.com/)",
   "license": "ISC",
