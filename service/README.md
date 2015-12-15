@@ -56,6 +56,7 @@ Execute the following commands to get service running with data.
 
 ## Next Steps
 
+1. Fork the repository, to start your workshop.
 1. Some code monkey let you a surprise, find it and fix it.
 1. The same monkey didn't created tests for the external integration with github let's fix this.
 1. Do you think the service interface for task user make sense? let's discuss it and fix it.
