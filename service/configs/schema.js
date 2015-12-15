@@ -33,5 +33,12 @@ module.exports = {
       doc: "Mongoose Debug Log Active",
       default: true
     }
+  },
+  github: {
+    uri: {
+      doc: "GitHub API URI",
+      format: String,
+      default: "https://api.github.com"
+    }
   }
 };
