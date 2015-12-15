@@ -1,7 +1,8 @@
 var mongoose = require('mongoose'),
     config = require('../config');
 
-mongoose.set('debug', true);
-mongoose.connect(config.get('database').uri);
+var dbConfig = config.get('database');
+mongoose.set('debug', dbConfig.log);
+mongoose.connect(dbConfig.uri);
 
 module.exports = mongoose;
