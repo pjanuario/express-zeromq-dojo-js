@@ -5,6 +5,7 @@ var target = require('../../service'),
     errors = require('../../configs/errors'),
     dbUri = config.get('database').uri,
     clearDB  = require('mocha-mongoose')(dbUri),
+    moment = require('moment'),
     chai = require("chai"),
     should = chai.should();
 
@@ -38,8 +39,8 @@ describe('Task Service Integration Specs', function(){
               title: "this is a test task",
               completed: true,
               userId: "pjanuario",
-              createdAt: "2015-12-14T14:51:06.157Z",
-              updatedAt: "2015-12-15T14:51:06.157Z"
+              createdAt: moment(task2.createdAt).format(),
+              updatedAt: moment(task2.updatedAt).format()
             });
             done();
           });
