@@ -28,6 +28,10 @@ module.exports = {
       doc: "Mongoose Database URI",
       format: String,
       default: "mongodb://localhost/todo-dojo"
+    },
+    log: {
+      doc: "Mongoose Debug Log Active",
+      default: true
     }
   }
 };

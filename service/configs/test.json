@@ -1,0 +1,6 @@
+{
+  "database": {
+    "uri": "mongodb://localhost/todo-dojo",
+    "log": true
+  }
+}
