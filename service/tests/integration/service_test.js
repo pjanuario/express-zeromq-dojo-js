@@ -39,8 +39,8 @@ describe('Task Service Integration Specs', function(){
               title: "this is a test task",
               completed: true,
               userId: "pjanuario",
-              createdAt: moment(task2.createdAt).format(),
-              updatedAt: moment(task2.updatedAt).format()
+              createdAt: moment(task2.createdAt).toISOString(),
+              updatedAt: moment(task2.updatedAt).toISOString()
             });
             done();
           });
