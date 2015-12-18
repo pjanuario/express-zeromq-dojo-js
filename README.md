@@ -57,6 +57,22 @@ The API is built using express.
 
 The service is implemented and exposed using ZSS service.
 
+## Starting the modules
+
+**0MQ Install**
+
+You need to have [0MQ installed](http://zeromq.org/area:download).
+
+If you use MacOS just do
+
+    $ brew install zeromq
+
+**Run ZSS Broker**
+
+    $ git clone git@github.com:pjanuario/zmq-service-suite-broker-js.git
+    $ npm install
+    $ npm start
+
 ## Tasks
 
 Each project will have the it's own readme with information about the tasks to execute and module details.
