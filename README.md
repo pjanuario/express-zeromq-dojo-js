@@ -14,7 +14,7 @@ This repository contains information for a workshop on Express and ZeroMQ Servic
 ## Requirements
 
 *ZeroMQ*
-ZeroMQ is a dependency for ZSS Broker as described in the project.
+[ZeroMQ](http://zeromq.or) is a dependency for ZSS Broker as described in the project.
 
 *ZSS Broker*
 
