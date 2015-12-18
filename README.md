@@ -73,6 +73,25 @@ If you use MacOS just do
     $ npm install
     $ npm start
 
+**Run The API**
+
+    $ cd api
+    $ npm install
+    $ npm start
+    $ curl -i http://localhost:8081/
+    HTTP/1.1 200 OK
+    X-Powered-By: Express
+    Access-Control-Allow-Headers: Content-Type
+    Access-Control-Allow-Methods: GET,POST,PATCH,DELETE
+    Access-Control-Allow-Origin: *
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 39
+    ETag: W/"27-+FvXRSx6O6KB96HTEAPcow"
+    Date: Fri, 18 Dec 2015 10:55:07 GMT
+    Connection: keep-alive
+
+    {"status":"API is running properly..."}%
+
 ## Tasks
 
 Each project will have the it's own readme with information about the tasks to execute and module details.
