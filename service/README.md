@@ -47,6 +47,8 @@ Execute the following commands to get service running with data.
 
 ## Tools
 
+In the following exercise tasks we will use the following tools.
+
 * superagent - http request library
 * mocha - test tool
 * mocha-mongoose - utility library to reset mongo collections on each test
@@ -56,9 +58,8 @@ Execute the following commands to get service running with data.
 
 ## Next Steps
 
-1. Fork the repository, to start your workshop.
-1. Some code monkey let you a surprise, find it and fix it.
-1. The same monkey didn't created tests for the external integration with github let's fix this.
+1. Some code monkey let you a "red flag" surprise, find it and fix it. Tip: it seems that the software isn't working as the service spec/contract is designed, running tests should help you.
+1. The same monkey didn't created tests for retrieving the user information. This feature have a external integration with github let's fix this and do some proper test/s case/s.
 1. Do you think the service interface for task user make sense? let's discuss it and fix it.
 1. Let's create a new operation on a service! Where should you start? Have eard about TDD? So let's try it. Implement the endpoint to retrieve a list of tasks.
 1. Identify service problems, trust me, it have a lot of issues!
