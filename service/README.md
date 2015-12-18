@@ -42,7 +42,7 @@ Execute the following commands to get service running with data.
     |- config.js   -> configuration module loader
     |- index.js    -> boot for service instance
     |- service.js  -> service implementation
-    |- user_service.js  -> user sub service implementation
+    |- user_service.js  -> user service implementation
 ```
 
 ## Tools
