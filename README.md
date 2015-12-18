@@ -92,6 +92,36 @@ If you use MacOS just do
 
     {"status":"API is running properly..."}%
 
+**Run The Service**
+
+    $ cd service
+    $ npm install
+    $ npm install -g node-mongo-seeds
+    $ seeds
+    $ npm start
+
+With the previous script we installed the service dependencies and loaded some data in mongodb. Now let's retrieve mongodb object identifier for the model.
+
+    $ mongo
+    $ use todo-dojo
+    $ db.tasks.find()
+
+Now, let's get data from the API using the model id retrieved on this step (replace it in URL).
+
+    $ curl -i http://localhost:8081/tasks/5673e800f1384b3c8b58db84
+    HTTP/1.1 200 OK
+    X-Powered-By: Express
+    Access-Control-Allow-Headers: Content-Type
+    Access-Control-Allow-Methods: GET,POST,PATCH,DELETE
+    Access-Control-Allow-Origin: *
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 181
+    ETag: W/"b5-h0hshYjiL6h8zvUh9vEhKw"
+    Date: Fri, 18 Dec 2015 11:07:46 GMT
+    Connection: keep-alive
+
+    {"id":"5673e800f1384b3c8b58db84","createdAt":"2015-12-14T14:51:06+00:00","updatedAt":"2015-12-15T14:51:06+00:00","title":"this is a test task","completed":true,"userId":"pjanuario"}%
+
 ## Tasks
 
 Each project will have the it's own readme with information about the tasks to execute and module details.
