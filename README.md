@@ -125,6 +125,7 @@ Now, let's get data from the API using the model id retrieved on this step (repl
 ## Tasks
 
 Each project will have the it's own readme with information about the tasks to execute on each module and module specific details.
+To keep the development simple, just create a new branch with your name to start the workshop.
 
 We will use the following order:
 
