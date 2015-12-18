@@ -3,5 +3,8 @@ var express = require('express'),
     tasksController = require('./controllers/task');
 
 router.get('/tasks/:id', tasksController.get);
+router.get('/', function(req, res){
+  res.json({ status: "API is running properly..." });
+});
 
 module.exports = router;
