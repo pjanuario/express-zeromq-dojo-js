@@ -18,6 +18,11 @@
     "zmq-service-suite-client": "0.0.4"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "supertest": "^1.1.0"
   }
 }
