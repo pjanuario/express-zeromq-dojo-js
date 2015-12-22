@@ -6,8 +6,12 @@ var express = require('express'),
     log = Logger.getLogger("API"),
     app = express();
 
+var isTest = process.env.NODE_ENV == 'test';
+
 // configure logging middleware
-app.use(morgan('dev'));
+if (!isTest) {
+  app.use(morgan('dev'));
+}
 
 // Allow CORS to be used by any client
 app.use(function(req, res, next) {
